@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='SwingBand'>
 <head>
-    <title>Angular Todo</title>
-    <link rel="stylesheet" type="text/css"href="bower_components/bootstrap/dist/bootstrap.min.css">
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <title>SwingBand webpage assignment</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Angular Todo!</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Swing Band!</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/ourmusic">Our music</a></li>
+                <li><a href="#/aboutus">Meet the band</a></li>
+                <li><a href="#/bookings">Bookings</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div ng-view>
+ 
+    </div>
+
+    <div>
+    	footer design and contents; 
+    	<span> Facebook, Instagram, Youtube and Twitter </span>
+    	<span> Subscribe to our mailing list</span>
+    </div>
+
+<script src='js/app.js'></script>
+<script src='js/controller.js'></script>
+<script src='js/services.js'></script>
 </body>
 </html>
